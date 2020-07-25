@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titleタグの説明 -->
     <title>Test</title>
 </head>
 <body>
-    <!-- 01_html_basic.mdのおさらいしつつ補足の説明をする。 -->
-    <!-- 基本構造の解説 html, head, body-->
-    <!-- タグ・要素・コンテンツなどの用語確認 -->
+<!-- 
+    フォルダ・ファイル作成の流れ確認
+    01_html_basic.mdのおさらいしつつ補足の説明をする。
+    全体構造の解説 html の中に head と body がある。
+    タグ・要素・コンテンツなどの用語確認
+    Emmetも随時教える（「ul>li*3」など）
+-->
     <h1>Hello</h1>
-    <!-- 終了タグのいらないタグは？ -->
+
+    <!-- 終了タグが必要なものとそうでないものがある。 -->
+
+    <!-- 属性・属性値 -->
     <img src="" alt="">
-    <!-- 属性・属性値、用語、何に使うか？ -->
     <h1 class="title">my page</h1>
     <!-- pはパラグラフの略、 -->
     <!-- 同じclass複数OK, 同じidは1個だけ -->
     <p id="text">good morning</p>
 
 
-    <!--  書き方 入れ子の説明、マトリョーシカ-->
+    <!--  書き方 入れ子構造、マトリョーシカ-->
     <nav>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
         </ul>
     </nav>
     <!-- 親子・兄弟 -->
     <!-- インデント -->
 
     <!-- ブロック要素・インライン要素 -->
+    <!-- ブロック要素：横幅いっぱいにスペースを取る -->
+    <!-- インライン要素：コンテンツの横幅だけのスペース -->
+    <!-- ↑ Developer Toolで見せる -->
+    <!-- ブロックかインラインは、要素によってデフォルトで決まっている（CSSで変えられる） -->
     <div>
-        <p>ブロック</p>
-        <p>ブロック</p>
-        <p>ブロック</p>
+        <div>ブロック</div>
+        <div>ブロック</div>
+        <div>ブロック</div>
     </div>
 
     <div>
@@ -42,8 +53,35 @@
         <span>インライン</span>
         <span>インライン</span>
     </div>
+
+     <!-- インラインを使う例 -->
+    <p>Lorem ipsum dolor, <span>インライン</span> sit amet consectetur adipisicing elit. Doloribus voluptates fugit, ad rerum repudiandae, in inventore facilis odio numquam, alias ducimus eligendi. Natus, saepe possimus voluptas libero esse atque quam!</p>
+<!-- 
+    divタグとは：特に用途の決まっていないブロック要素
+    spanタグとは：特に用途の決まっていないインライン要素 
+-->
 
     <!-- 各タグの説明 -->
+
+    <img src="" alt="">
+    <!-- srcの中にURLを入れると画像を表示できる　↓ -->
+    <!-- https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80 -->
+
+    <!-- <nav></nav> -->
+    <!-- navの用途：検索して調べる。
+    これからいろんなタグが出てくるので、自分で調べて意味を理解しよう。 -->
+
+    <!-- 時間余ったら -->
+    <!-- 時間余ったら 
+    https://github.com/NexSeed00/HTML_CSS/blob/master/doc/08_vscode.md
+    VS CodeのEmmet
+    -->
+    <form action="">
+        <input type="text" placeholder="name">
+        <input type="email">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button>Submit</button>
+    </form>
     <!-- h1 ~ h6 -->
     <h1>見出し１</h1>
     <h2>見出し２</h2>
@@ -62,13 +100,17 @@
     <!-- page内リンク -->
     <!-- 上の方に<a>書く -->
     <!-- <a href="#section-01">ページ内リンク</a> -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
 
     <!-- <h2 id="section-01">ここへ移動</h2> -->
+<!--     
+    どれを使ってもそんなに見た目は変わらない。
+    人間がコードを読んだ時、どんな内容なのかわかりやすいように区別している。 
+-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ducimus possimus, quia amet, cumque fuga voluptate architecto aliquid sed quam quae, quasi culpa cum hic provident deserunt fugiat eveniet.</p>
 
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ad, odio alias architecto repellendus, voluptatum adipisci iure quasi explicabo ut cupiditate perspiciatis expedita repudiandae magni quaerat aliquam? Deserunt, tempora molestiae.</div>
 
-
-
-    
+    <nav>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor at, distinctio earum placeat dicta molestias inventore id molestiae numquam magnam exercitationem architecto suscipit natus veritatis aspernatur rem eos, est officiis.</nav>  
 </body>
 </html>
